@@ -1,0 +1,3 @@
+[submodule "static/emoji"]
+	path = static/emoji
+	url = https://github.com/douban-code/emoji.git

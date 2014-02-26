@@ -3,7 +3,7 @@ from flask import request
 from flask import Markup
 from flask import render_template as st
 from mikoto.libs.text import render
-app = Flask(__name__)
+app = Flask(__name__, static_url_path="/static")
 
 @app.route("/", methods=['POST', 'GET'])
 def index():
