@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mikoto Demo</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style type="text/css">
+    body {
+      padding-top: 50px;
+    }
+    </style>
+  </head>
+
+
+  <body>
+
+    <div class="container">
+      <div>
+      {% if html %}
+        {{ html }}
+        {% else %}
+        <h1>Mikoto Demo</h1>
+        <p class="lead"><a href="http://github.com/qingfeng/mikoto">Mikoto</a> 是 CODE 的 Markdown, reStructuredText 渲染库。<br>
+          基于 Misaka，CODE 使用的渲染相关的方法单独封装了一个库，支持emoji，Task List等高级特性。</p>
+        <form method="POST" action="/" role="form">
+          <div class="form-group">
+            <textarea name="md_content" rows="25" cols="100">
+# 富士之风
+
+扇携富士风 送礼回江户
+
+```python
+>>> import this
+```
+
+- [x] 显示标题
+- [x] 显示代码
+- [x] 显示俳句
+- [ ] つづき
+
+:beer:
+            </textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        {% endif %}
+      </div>
+    </div>
+
+  </body>
+</html>

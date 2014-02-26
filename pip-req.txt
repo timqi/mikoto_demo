@@ -1,0 +1,3 @@
+mikoto==0.0.2
+pytest==2.5.2
+Flask==0.10.1

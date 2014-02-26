@@ -1,0 +1,12 @@
+*.pyc
+*.py~
+*.tpl~
+*.un~
+*.sw[mnpo]
+*.DS_Store
+.#*
+/local_config.py
+/build
+/pip-log.txt
+/tmp
+/venv
